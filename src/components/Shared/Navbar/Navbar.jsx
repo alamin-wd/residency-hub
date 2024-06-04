@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
 
-        <div className="navbar mb-10">
+        <div className="navbar">
             <div className="navbar-start">
 
                 {/* Dropdown */}
@@ -75,8 +75,8 @@ const Navbar = () => {
                                 <button className="bg-[#403F3F] hover:bg-[#292828] text-white text-lg font-medium px-4 py-1 rounded-lg">Login</button>
                             </Link>
                     } */}
-                    
-                    <Link>
+
+                    <Link to="/login">
                         <button className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Login</button>
                     </Link>
 
