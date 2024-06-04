@@ -8,8 +8,6 @@ const Root = () => {
 
         <div>
 
-            {/* <Header></Header> */}
-
             <div className="max-w-6xl mx-auto font-poppins">
                 <Outlet></Outlet>
             </div>

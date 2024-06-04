@@ -3,18 +3,23 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
 
     const navLinks = <>
+
         <li className="text-lg font-medium mr-2">
             <NavLink to="/">Home</NavLink>
         </li>
+
         <li className="text-lg font-medium mr-2">
             <NavLink to="/agents">Agents</NavLink>
         </li>
+
         <li className="text-lg font-medium mr-2">
             <NavLink to="/update-profile">Update Profile</NavLink>
         </li>
+
         <li className="text-lg font-medium mr-2">
             <NavLink to="/user-profile">User Profile</NavLink>
         </li>
+
     </>
 
     return (
@@ -70,9 +75,11 @@ const Navbar = () => {
                                 <button className="bg-[#403F3F] hover:bg-[#292828] text-white text-lg font-medium px-4 py-1 rounded-lg">Login</button>
                             </Link>
                     } */}
+                    
                     <Link>
                         <button className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Login</button>
                     </Link>
+
                 </div>
             </div>
         </div>
