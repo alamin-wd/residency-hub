@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Spacious Contemporary Family Residence",
+        "segment_name": "Single-family home",
+        "description": "This stunning contemporary family home offers a perfect blend of modern design and comfort. Featuring spacious living areas, an expansive backyard, and state-of-the-art amenities, it provides an ideal setting for family life. Located in a serene neighborhood, it ensures privacy and tranquility while being close to essential services and schools. The open-plan layout enhances the sense of space, making it perfect for entertaining guests or enjoying family time. Energy-efficient features and premium finishes add to the home's appeal, making it a smart investment for a sustainable lifestyle.",
+        "price": "$450,000",
+        "status": "Sale",
+        "area": "2500 sq ft",
+        "location": "123 Maple Street, Springfield",
+        "facilities": [
+            "Living room",
+            "Swimming pool",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/5YpMcqF/Single-family-homes.png"
+    },
+    {
+        "id": 2,
+        "estate_title": "Cozy Townhouse in Quiet Neighborhood",
+        "segment_name": "Townhouse",
+        "description": "Nestled in a quiet, family-friendly neighborhood, this charming townhouse offers the perfect blend of comfort and convenience. With 1800 sq ft of well-designed living space, it features cozy interiors, modern amenities, and a private garage. The open-plan living area is ideal for family gatherings, while the kitchen is equipped with top-of-the-line appliances. Enjoy the peace and serenity of suburban living while being just minutes away from local shops, parks, and schools. This townhouse is an excellent choice for small families or couples looking for a comfortable, stylish home.",
+        "price": "$320,000",
+        "status": "Sale",
+        "area": "1800 sq ft",
+        "location": "456 Oak Avenue, Springfield",
+        "facilities": [
+            "Living room",
+            "Garage",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/d76zrM3/townhouses.png"
+    },
+    {
+        "id": 3,
+        "estate_title": "Upscale Urban Apartment with City Views",
+        "segment_name": "Apartment",
+        "description": "Experience luxury living in this upscale apartment offering breathtaking city views and top-tier amenities. Spanning 2000 sq ft, the apartment features a spacious living room, a state-of-the-art kitchen, and access to a private gym. The sleek, modern design and high-end finishes make it an ideal urban retreat. Situated in a prime downtown location, it provides easy access to shopping, dining, and entertainment options. Whether you're looking to unwind or entertain, this apartment caters to all your needs with style and sophistication.",
+        "price": "$600,000",
+        "status": "Sale",
+        "area": "2000 sq ft",
+        "location": "789 Pine Street, Springfield",
+        "facilities": [
+            "Living room",
+            "Gym",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/NCW2qzT/apartments.png"
+    },
+    {
+        "id": 4,
+        "estate_title": "Convenient Student Housing Near University",
+        "segment_name": "Student housing",
+        "description": "Designed with students in mind, this affordable housing option offers a perfect blend of convenience and community. Located close to the university, it features shared common areas ideal for socializing and studying. Each unit includes a comfortable living room, a well-equipped kitchen, and dedicated study spaces. With a focus on safety and affordability, it provides an ideal environment for academic success and personal growth. The vibrant community atmosphere and proximity to campus make it a top choice for students seeking a supportive and dynamic living experience.",
+        "price": "$500 per month",
+        "status": "Rent",
+        "area": "1200 sq ft",
+        "location": "101 University Way, Springfield",
+        "facilities": [
+            "Living room",
+            "Study room",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/TWwYpxk/student-housing.png"
+    },
+    {
+        "id": 5,
+        "estate_title": "Peaceful Senior Living Community Environment",
+        "segment_name": "Senior living",
+        "description": "This senior living community offers a serene and supportive environment for retirees seeking comfort and peace. The 1500 sq ft residences are designed with accessibility in mind, featuring spacious living areas, modern kitchens, and a variety of recreational facilities. Located in a tranquil setting, it provides easy access to medical services, shopping, and entertainment. The community atmosphere fosters social interaction and a sense of belonging, making it an ideal place for seniors to enjoy their golden years in comfort and security.",
+        "price": "$400,000",
+        "status": "Sale",
+        "area": "1500 sq ft",
+        "location": "202 Elderberry Lane, Springfield",
+        "facilities": [
+            "Living room",
+            "Recreation room",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/x8RxJPc/senior-living.png"
+    },
+    {
+        "id": 6,
+        "estate_title": "Beachfront Luxury Vacation Rental Escape",
+        "segment_name": "Vacation rental",
+        "description": "Indulge in a luxurious beachfront vacation at this stunning rental property. Offering 3000 sq ft of living space, it features a spacious living room, a private swimming pool, and a fully equipped kitchen. The property boasts breathtaking ocean views and direct beach access, making it perfect for a relaxing getaway. Enjoy modern amenities, stylish interiors, and outdoor entertainment areas. Whether you're lounging by the pool or taking a stroll on the beach, this vacation rental promises a memorable and rejuvenating experience.",
+        "price": "$800 per night",
+        "status": "Rent",
+        "area": "3000 sq ft",
+        "location": "303 Ocean Drive, Springfield",
+        "facilities": [
+            "Living room",
+            "Swimming pool",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/8KG0NBp/vacation-rentals.png"
+    },
+    {
+        "id": 7,
+        "estate_title": "Spacious Suburban Luxury Family Home",
+        "segment_name": "Single-family home",
+        "description": "This expansive suburban home offers a perfect blend of luxury and comfort, ideal for family living. With 2800 sq ft of modern interiors, it features a large backyard, a private garage, and spacious living areas. The open-plan design is perfect for entertaining, while the well-appointed kitchen caters to all your culinary needs. Located in a quiet, family-friendly neighborhood, it provides easy access to schools, parks, and shopping centers. This home is the epitome of suburban elegance, offering a peaceful retreat from the hustle and bustle of city life.",
+        "price": "$500,000",
+        "status": "Sale",
+        "area": "2800 sq ft",
+        "location": "404 Birch Lane, Springfield",
+        "facilities": [
+            "Living room",
+            "Garage",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/jf490Zv/Single-family-homes2.png"
+    },
+    {
+        "id": 8,
+        "estate_title": "Modern Downtown Loft with High-End Finishes",
+        "segment_name": "Apartment",
+        "description": "Located in the heart of downtown, this stylish loft offers open-concept living with high-end finishes and modern amenities. Spanning 2200 sq ft, it features a spacious living area, a private gym, and a gourmet kitchen. The sleek design and panoramic city views create a sophisticated urban retreat. Perfectly situated near shops, restaurants, and cultural attractions, this loft provides the ultimate in convenience and luxury. It's the ideal space for those who appreciate contemporary design and an active city lifestyle.",
+        "price": "$550,000",
+        "status": "Rent",
+        "area": "2200 sq ft",
+        "location": "505 Cedar Street, Springfield",
+        "facilities": [
+            "Living room",
+            "Gym",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/XVy4FTK/apartments2.png"
+    },
+    {
+        "id": 9,
+        "estate_title": "Idyllic Countryside Cottage Retreat",
+        "segment_name": "Vacation rental",
+        "description": "Escape to this charming countryside cottage, perfect for a peaceful and relaxing retreat. Surrounded by nature, it offers 1400 sq ft of cozy living space with a garden, a comfortable living room, and a fully equipped kitchen. The serene location provides a tranquil setting for unwinding and enjoying the great outdoors. Ideal for weekend getaways or longer stays, this cottage offers a unique blend of rustic charm and modern comforts. Whether you're looking to disconnect from the hustle and bustle or explore the surrounding nature trails, this property provides the perfect escape.",
+        "price": "$250 per night",
+        "status": "Sale",
+        "area": "1400 sq ft",
+        "location": "606 Pinecone Trail, Springfield",
+        "facilities": [
+            "Living room",
+            "Garden",
+            "Kitchen"
+        ],
+        "image": "https://i.ibb.co/wMwnKJf/vacation-rentals-2.png"
+    }
+]

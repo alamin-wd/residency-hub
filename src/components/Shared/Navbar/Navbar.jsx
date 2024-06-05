@@ -12,7 +12,7 @@ const Navbar = () => {
             .catch()
     }
 
-    const navLinks = <>
+    const menus = <>
 
         <li className="text-lg font-medium mr-2">
             <NavLink to="/">Home</NavLink>
@@ -46,7 +46,7 @@ const Navbar = () => {
                     {/* Responsive */}
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {
-                            navLinks
+                            menus
                         }
                     </ul>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {
-                        navLinks
+                        menus
                     }
                 </ul>
             </div>
@@ -110,13 +110,13 @@ const Navbar = () => {
                                 </div>
 
                                 <button onClick={handleLogOut}
-                                    className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">
+                                    className="bg-[#2f7e4b] hover:bg-[#1a472a]  text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">
                                     Log Out</button>
                             </div>
 
                             :
                             <Link to="/login">
-                                <button className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Log In</button>
+                                <button className="bg-[#2f7e4b] hover:bg-[#1a472a] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Log In</button>
                             </Link>
                     }
 

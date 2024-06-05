@@ -7,6 +7,7 @@ import Agents from "../pages/Agents/Agents";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import NotFound from "../components/NotFound/NotFound";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader : () => fetch('/estates.json'),
       },
 
       {
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
 
       {
         path: "/user-profile",
-        element: <UserProfile></UserProfile>,
+        element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>,
       },
 
       {
