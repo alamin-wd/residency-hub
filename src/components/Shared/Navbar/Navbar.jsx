@@ -75,11 +75,45 @@ const Navbar = () => {
                         {/* <img src={userDefaultPhoto} /> */}
                     </div>
                 </div>
+
                 <div>
                     {
-                        user ?
-                            <button onClick={handleLogOut}
-                            className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Log Out</button>
+                        user?.email ?
+
+                            <div className="flex items-center gap-3">
+                                <div className="tooltip tooltip-bottom" data-tip={user.email}>
+                                    <div className="dropdown">
+                                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                            <div className="w-10 rounded-full">
+
+                                                <img alt="User img" src="https://i.ibb.co/BP1tpQC/user-Photo.png" />
+
+                                            </div>
+                                        </div>
+
+                                        <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-lg w-36">
+
+                                            <li>
+                                                <Link to="/user-profile">User Profile</Link>
+                                            </li>
+
+                                            <li>
+                                                <Link to="/update-profile">Update Profile</Link>
+                                            </li>
+
+                                            <li>
+                                                <button onClick={handleLogOut}>Log Out</button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <button onClick={handleLogOut}
+                                    className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">
+                                    Log Out</button>
+                            </div>
+
                             :
                             <Link to="/login">
                                 <button className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Log In</button>
@@ -87,6 +121,7 @@ const Navbar = () => {
                     }
 
                 </div>
+
             </div>
         </div>
     );
@@ -95,3 +130,32 @@ const Navbar = () => {
 export default Navbar;
 
 
+{/* <div className="navbar bg-base-100">
+    <div className="flex-1">
+        <a className="btn btn-ghost text-xl">daisyUI</a>
+    </div>
+    <div className="flex-none gap-2">
+        <div className="form-control">
+            <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+        </div>
+
+        <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                    <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+            </div>
+            <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                <li>
+                    <a className="justify-between">
+                        Profile
+                        <span className="badge">New</span>
+                    </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div> */}
