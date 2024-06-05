@@ -6,12 +6,14 @@ import UserProfile from "../pages/UserProfile/UserProfile";
 import Agents from "../pages/Agents/Agents";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import NotFound from "../components/NotFound/NotFound";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/",
