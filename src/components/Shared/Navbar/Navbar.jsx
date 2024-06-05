@@ -1,6 +1,16 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
 
     const navLinks = <>
 
@@ -66,19 +76,15 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div>
-                    {/* {
+                    {
                         user ?
                             <button onClick={handleLogOut}
-                                className="bg-[#403F3F] hover:bg-[#292828] text-white text-lg font-medium px-4 py-1 rounded-lg">Log Out</button>
+                            className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Log Out</button>
                             :
-                            <Link to={"/login"}>
-                                <button className="bg-[#403F3F] hover:bg-[#292828] text-white text-lg font-medium px-4 py-1 rounded-lg">Login</button>
+                            <Link to="/login">
+                                <button className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Log In</button>
                             </Link>
-                    } */}
-
-                    <Link to="/login">
-                        <button className="bg-[#1a472a] hover:bg-[#2f7e4b] text-white text-lg font-medium px-3 py-1 md:px-6 md:py-2 rounded-lg">Login</button>
-                    </Link>
+                    }
 
                 </div>
             </div>
