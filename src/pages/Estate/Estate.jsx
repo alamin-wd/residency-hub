@@ -4,18 +4,19 @@ import { PiGarageBold } from "react-icons/pi";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { SiPluscodes } from "react-icons/si";
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 const Estate = ({ estate }) => {
 
-    const { image, estate_title, segment_name, price, status, area, location, facilities } = estate;
+    const { id, image, estate_title, segment_name, price, status, area, location, facilities } = estate;
 
     return (
 
         <div className="shadow-xl rounded-xl">
 
             <div className="indicator">
-                <span className="indicator-item indicator-start indicator-top badge badge-success translate-x-5 translate-y-5 text-white p-3 font-medium">{estate.status}</span>
-                <img className="w-[366px] rounded-t-xl" alt="" src={estate.image} />
+                <span className="indicator-item indicator-start indicator-top badge badge-success translate-x-5 translate-y-5 text-white p-3 font-medium">{status}</span>
+                <img className="w-[366px] rounded-t-xl" alt="" src={image} />
             </div>
 
             {/* Card Content */}
@@ -23,12 +24,12 @@ const Estate = ({ estate }) => {
 
                 <div className="flex items-center justify-between">
                     <h4 className="text-lg text-[#05264e] font-semibold">
-                        {estate.segment_name} </h4>
+                        {segment_name} </h4>
 
-                    <h4 className="text-2xl text-[#2f7e4b] font-semibold">{estate.price}</h4>
+                    <h4 className="text-2xl text-[#2f7e4b] font-semibold">{price}</h4>
                 </div>
 
-                <h3 className="text-xl text-[#05264e] font-bold my-3">{estate.estate_title}</h3>
+                <h3 className="text-xl text-[#05264e] font-bold my-3">{estate_title}</h3>
 
                 <hr />
 
@@ -36,17 +37,17 @@ const Estate = ({ estate }) => {
 
                     <span className="flex items-center gap-2">
                         <MdOutlineBedroomParent />
-                        <p className="text-sm font-medium">{estate.facilities[0]}</p>
+                        <p className="text-sm font-medium">{facilities[0]}</p>
                     </span>
 
                     <span className="flex items-center gap-2">
                         <PiGarageBold />
-                        <p className="text-sm font-medium">{estate.facilities[1]}</p>
+                        <p className="text-sm font-medium">{facilities[1]}</p>
                     </span>
 
                     <span className="flex items-center gap-2">
                         <FaKitchenSet />
-                        <p className="text-sm font-medium">{estate.facilities[2]}</p>
+                        <p className="text-sm font-medium">{facilities[2]}</p>
                     </span>
 
                 </div>
@@ -54,12 +55,12 @@ const Estate = ({ estate }) => {
                 <div className="flex items-center justify-between text-[#5f7384] mt-2 pb-3">
                     <span className="flex items-center gap-2">
                         <MdOutlineLocationOn />
-                        <p className="text-sm font-medium">{estate.location}</p>
+                        <p className="text-sm font-medium">{location}</p>
                     </span>
 
                     <span className="flex items-center gap-2">
                         <SiPluscodes />
-                        <p className="text-sm font-medium">{estate.area}</p>
+                        <p className="text-sm font-medium">{area}</p>
                     </span>
                 </div>
 
@@ -68,7 +69,9 @@ const Estate = ({ estate }) => {
             </div>
 
             <div className="mt-2 mb-4 w-1/2 mx-auto">
-                <button className="w-full bg-[#2f7e4b] hover:bg-[#1a472a] text-white py-2 rounded-lg font-medium">View Property</button>
+                <Link to={`/estate/${id}`}>
+                    <button className="w-full bg-[#2f7e4b] hover:bg-[#1a472a] text-white py-2 rounded-lg font-medium">View Property</button>
+                </Link>
             </div>
 
         </div>
