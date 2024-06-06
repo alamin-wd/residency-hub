@@ -28,13 +28,13 @@ const AuthProvider = ({ children }) => {
     // Google Login
 
     const googleLogin = () => {
-
+        setLoading(true);
         return signInWithPopup(auth, googleProvider);
     }
 
     // Github Login
     const githubLogin = () => {
-
+        setLoading(true);
         return signInWithPopup(auth, githubProvider);
     }
 

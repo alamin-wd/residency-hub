@@ -1,12 +1,14 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, loading, setLoading } = useContext(AuthContext);
     const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const navigate = useNavigate();
 
     const onSubmit = data => {
 
@@ -16,10 +18,13 @@ const Register = () => {
 
             .then(result => {
                 console.log(result.user);
+                alert("Registration Successful! Please Log in");
+                navigate("/login");
             })
             .catch(error => {
                 console.error(error);
-            })
+                setLoading(false);
+            });
     };
 
     return (
