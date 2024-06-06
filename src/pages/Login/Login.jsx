@@ -3,33 +3,33 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
 import SocialLogin from "./SocialLogin/SocialLogin";
+import { toast } from "react-toastify";
+import { FaRegEye } from "react-icons/fa6";
+import { FaRegEyeSlash } from "react-icons/fa6";
 
 const Login = () => {
 
-    const { logIn, loading } = useContext(AuthContext);
+    const { logIn } = useContext(AuthContext);
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const [errorMessage, setErrorMessage] = useState(null);
-    const location = useLocation();
+    const [showPassword, setShowPassword] = useState(false);
+    // const location = useLocation();
     const navigate = useNavigate();
 
-    const onSubmit = data => {
+    const onSubmit = (data) => {
 
         const { email, password } = data;
 
         logIn(email, password)
-
-            .then(result => {
+            .then((result) => {
                 console.log(result.user);
+                toast("Your Login is successful!");
                 navigate('/');
             })
-            .catch(error => {
+            .catch((error) => {
                 console.error(error);
-                setErrorMessage(error.message);
-            })
-            
+            });
     };
-    
 
     return (
 
@@ -54,14 +54,25 @@ const Login = () => {
 
                         </div>
 
-                        <div className="form-control">
+                        <div className="form-control relative">
 
                             <label className="label">
                                 <span className="label-text text-[#403F3F] font-medium">Password</span>
                             </label>
-                            <input type="password" name="password" placeholder="Password" className="input input-bordered"
+                            <input
+                                type={showPassword ? "text" : "password"}
+                                name="password"
+                                placeholder="Password"
+                                className="input input-bordered"
                                 {...register("password", { required: true })} />
                             {errors.password && <span className="text-red-600 mt-1">This field is required</span>}
+
+                            <button className="mt-1 absolute top-12 left-72"
+                                onClick={() => setShowPassword(!showPassword)}>
+                                {
+                                    showPassword ? <FaRegEyeSlash /> : <FaRegEye />
+                                }
+                            </button>
 
                         </div>
 
@@ -79,7 +90,7 @@ const Login = () => {
                     {/* Social Logins */}
 
                     <div className="mx-8">
-                       
+
                         <span>
                             <SocialLogin></SocialLogin>
                         </span>
