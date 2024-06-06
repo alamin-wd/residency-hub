@@ -10,7 +10,6 @@ import NotFound from "../components/NotFound/NotFound";
 import PrivateRoute from "./PrivateRoute";
 import EstateDetails from "../pages/EstateDetails/EstateDetails";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
