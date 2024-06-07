@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Estate from "../Estate/Estate";
 import { useState } from "react";
@@ -33,10 +33,18 @@ const Home = () => {
                 <div className="w-48 mx-auto mt-10">
                     <div className={estatesLength === estates.length && "hidden"}>
 
-                        <button onClick={() => setEstatesLength(estates.length)}
+                        {/* <button onClick={() => setEstatesLength(estates.length)}
                             className="w-full mx-auto bg-white hover:bg-[#1a472a] text-[#1a472a] hover:text-white py-2 rounded-lg font-medium border border-[#2f7e4b]">
                             View All Properties
-                        </button>
+                        </button> */}
+
+                        <Link to="property">
+                            <button onClick={() => setEstatesLength(estates.length)}
+                                className="w-full mx-auto bg-white hover:bg-[#1a472a] text-[#1a472a] hover:text-white py-2 rounded-lg font-medium border border-[#2f7e4b]">
+                                View All Properties
+                            </button>
+                        </Link>
+
 
                     </div>
                 </div>

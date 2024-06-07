@@ -9,6 +9,7 @@ import Register from "../pages/Register/Register";
 import NotFound from "../components/NotFound/NotFound";
 import PrivateRoute from "./PrivateRoute";
 import EstateDetails from "../pages/EstateDetails/EstateDetails";
+import Property from "../pages/Property/Property";
 
 const router = createBrowserRouter([
   {
@@ -19,22 +20,31 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader : () => fetch('/estates.json'),
+        loader: () => fetch('/estates.json'),
+      },
+
+      {
+        path: "/property",
+        element: <Property></Property>,
+        loader: () => fetch('/estates.json'),
       },
 
       {
         path: "/update-profile",
-        element: <UpdateProfile></UpdateProfile>,
+        element: (<PrivateRoute>
+          <UpdateProfile></UpdateProfile>
+        </PrivateRoute>),
       },
 
       {
         path: "/user-profile",
-        element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>,
+        element: (<PrivateRoute><UserProfile></UserProfile></PrivateRoute>),
       },
 
       {
         path: "/agents",
         element: <Agents></Agents>,
+        loader: () => fetch('/agents.json'),
       },
 
       {

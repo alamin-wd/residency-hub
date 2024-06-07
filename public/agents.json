@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/C2tQ4CM/1.png",
+      "name": "John Doe",
+      "agent_type": "Real Estate Sales Agent"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/mhZMzZj/2.png",
+      "name": "Jane Smith",
+      "agent_type": "Rental Property Manager"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/dBb0wfj/3.png",
+      "name": "Michael Johnson",
+      "agent_type": "Commercial Real Estate Broker"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/zSKy2s7/4.png",
+      "name": "Emily Brown",
+      "agent_type": "Luxury Property Specialist"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/7RYM0p6/5.png",
+      "name": "David Wilson",
+      "agent_type": "Residential Realtor"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/CwkxQKS/6.png",
+      "name": "Sarah Clark",
+      "agent_type": "Investment Property Advisor"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/WkpfdWd/7.png",
+      "name": "Matthew Lee",
+      "agent_type": "New Home Sales Consultant"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/47r1SfD/8.png",
+      "name": "Olivia Martinez",
+      "agent_type": "Home Staging Professional"
+    }
+  ]
+  
