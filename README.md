@@ -1,9 +1,10 @@
+
+1. Website Name: Residency Hub
+2. Live Site URL: https://residency-hub.web.app/
+
 Implement packages
 1. React-leaflet
 2. React Hook form
-
-a. Website Name: Residency Hub
-b. Live Site URL: https://residency-hub.web.app/
 
 # React + Vite
 
