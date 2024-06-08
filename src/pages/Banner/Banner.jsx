@@ -10,7 +10,7 @@ const Banner = () => {
                 <img src="https://i.ibb.co/W0TKSC6/slider1.png" className="w-full" />
                
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3">
-                    <div className="w-2/3 mx-auto text-center">
+                    <div className="w-2/3 mx-auto text-center mt-16">
                         <h2 className="text-white text-6xl font-bold">Find Your Dream Home</h2>
                         <p className="text-white my-4">Search through our extensive listings to find the home that fits your lifestyle and budget. Residency Hub makes home hunting easy and enjoyable.</p>
                     </div>
@@ -29,7 +29,7 @@ const Banner = () => {
 
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3">
                     <div className="w-2/3 mx-auto text-center">
-                        <h2 className="text-white text-6xl font-bold">Connect with Trusted Agents</h2>
+                        <h2 className="text-white text-6xl font-bold mt-16">Connect with Trusted Agents</h2>
                         <p className="text-white my-4">Work with experienced real estate professionals to navigate the market. Our trusted agents are here to guide you every step of the way.</p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Banner = () => {
 
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3">
                     <div className="w-2/3 mx-auto text-center">
-                        <h2 className="text-white text-6xl font-bold">Explore Top Neighborhoods</h2>
+                        <h2 className="text-white text-6xl font-bold mt-16">Explore Top Neighborhoods</h2>
                         <p className="text-white my-4">Discover the best neighborhoods for your needs. Get detailed insights and recommendations to choose the perfect location for your new home.</p>
                     </div>
                 </div>

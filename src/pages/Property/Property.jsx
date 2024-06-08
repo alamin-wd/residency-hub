@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaKitchenSet } from "react-icons/fa6";
 import { MdOutlineBedroomParent, MdOutlineLocationOn } from "react-icons/md";
 import { PiGarageBold } from "react-icons/pi";
@@ -5,12 +6,18 @@ import { SiPluscodes } from "react-icons/si";
 import { Link, useLoaderData } from "react-router-dom";
 
 const Property = () => {
-    
+
     const estates = useLoaderData();
 
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8 mx-4">
+
+            <Helmet>
+                <title>Property | Residency Hub</title>
+            </Helmet>
+
             {
                 estates.map(property => <div
                     key={property.id}
@@ -18,7 +25,7 @@ const Property = () => {
 
                     <div className="indicator">
                         <span className="indicator-item indicator-start indicator-top badge badge-success translate-x-5 translate-y-5 text-white p-3 font-medium">{property.status}</span>
-                        <img className="w-[366px] rounded-t-xl" alt="" src={property.image} />
+                        <img className="w-[310px] md:w-[358px] rounded-t-xl" alt="" src={property.image} />
                     </div>
 
                     {/* Card Content */}

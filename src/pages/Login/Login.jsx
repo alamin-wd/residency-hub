@@ -6,6 +6,7 @@ import SocialLogin from "./SocialLogin/SocialLogin";
 import { toast } from "react-toastify";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegEyeSlash } from "react-icons/fa6";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
 
@@ -34,6 +35,10 @@ const Login = () => {
     return (
 
         <div className="max-w-full bg-[#52bd78] mx-2">
+
+            <Helmet>
+                <title>Login | Residency Hub</title>
+            </Helmet>
 
             <div className="hero px-4 md:px-0 py-5 md:py-10">
 

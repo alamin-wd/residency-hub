@@ -1,6 +1,7 @@
 
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
 
@@ -9,6 +10,10 @@ const UpdateProfile = () => {
     return (
 
         <div className="w-1/2 mx-auto my-6">
+
+            <Helmet>
+                <title>Profile Update | Residency Hub</title> 
+            </Helmet>
 
             <img className="w-[200px] mx-auto" src={user.photoURL} alt="" />
 
@@ -29,7 +34,7 @@ const UpdateProfile = () => {
                             (<p className="text-xl text-[#05264e] font-bold">Email: <span className="text-lg text-[#05264e] font-semibold">{user.email}</span></p>
                             )
                             :
-                            (<p className="text-xl text-[#05264e] font-bold">Email: <span className="text-lg text-[#05264e] font-bold">Unknown</span></p>)
+                            (<p className="text-xl text-[#05264e] font-bold">Email: <span className="text-lg text-[#05264e] font-bold">No Email Address Found</span></p>)
                     }
                 </li>
             </ul>

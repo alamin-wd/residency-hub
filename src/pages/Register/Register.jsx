@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
     const { createUser, setLoading } = useContext(AuthContext);
@@ -35,13 +36,18 @@ const Register = () => {
 
     return (
         <div className="max-w-full mx-2 bg-[#52bd78]">
+
+            <Helmet>
+                <title>Register | Residency Hub</title>
+            </Helmet>
+
             <div className="hero px-4 md:px-0 py-5 md:py-10">
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <h3 className="text-[#403F3F] text-3xl font-semibold mx-auto pt-6">Register Your Account</h3>
 
-                    <form 
-                    onSubmit={handleSubmit(onSubmit)} 
-                    className="card-body">
+                    <form
+                        onSubmit={handleSubmit(onSubmit)}
+                        className="card-body">
 
                         <div className="form-control">
                             <label className="label">
@@ -93,7 +99,7 @@ const Register = () => {
                                         message: "Password must contain at least one uppercase letter and one lowercase letter"
                                     }
                                 })} />
-                                
+
                             {errors.password && <span className="text-red-600 mt-1">{errors.password.message}</span>}
 
                             <button className="mt-1 absolute top-12 left-72"

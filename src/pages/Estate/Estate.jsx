@@ -16,7 +16,7 @@ const Estate = ({ estate }) => {
 
             <div className="indicator">
                 <span className="indicator-item indicator-start indicator-top badge badge-success translate-x-5 translate-y-5 text-white p-3 font-medium">{status}</span>
-                <img className="w-[366px] rounded-t-xl" alt="" src={image} />
+                <img className="w-[300px] md:w-[352px] rounded-t-xl" alt="" src={image} />
             </div>
 
             {/* Card Content */}
@@ -33,7 +33,7 @@ const Estate = ({ estate }) => {
 
                 <hr />
 
-                <div className="flex items-center justify-between text-[#5f7384] mt-4">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between text-[#5f7384] mt-4">
 
                     <span className="flex items-center gap-2">
                         <MdOutlineBedroomParent />
@@ -52,7 +52,7 @@ const Estate = ({ estate }) => {
 
                 </div>
 
-                <div className="flex items-center justify-between text-[#5f7384] mt-2 pb-3">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between text-[#5f7384] mt-2 pb-3">
                     <span className="flex items-center gap-2">
                         <MdOutlineLocationOn />
                         <p className="text-sm font-medium">{location}</p>

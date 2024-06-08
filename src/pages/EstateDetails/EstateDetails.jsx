@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaKitchenSet } from "react-icons/fa6";
 import { MdOutlineBedroomParent, MdOutlineLocationOn } from "react-icons/md";
 import { PiGarageBold } from "react-icons/pi";
@@ -18,6 +19,10 @@ const EstateDetails = () => {
     return (
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ms-2">
+
+            <Helmet>
+                <title>Estate Details | Property</title>
+            </Helmet>
 
             <div className="col-span-2">
                 <img className="w-full" src={image} alt="" />
