@@ -1,6 +1,6 @@
 Implement packages
 1. React-leaflet
-d. React Hook form
+2. React Hook form
 
 Website Name: Residency Hubhttps://github.com/alamin-wd/residency-hub/blob/main/README.md
 Live Site URL: https://residency-hub.web.app/
