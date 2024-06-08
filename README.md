@@ -2,7 +2,7 @@ Implement packages
 1. React-leaflet
 2. React Hook form
 
-Website Name: Residency Hubhttps://github.com/alamin-wd/residency-hub/blob/main/README.md
+Website Name: Residency Hub
 Live Site URL: https://residency-hub.web.app/
 
 # React + Vite
